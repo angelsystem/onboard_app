@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF9BE5611D9B8064009DC7CD /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BE5601D9B8064009DC7CD /* Slider.swift */; };
 		AFE8839C1B9D0793008D6DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8839B1B9D0793008D6DE1 /* AppDelegate.swift */; };
 		AFE8839E1B9D0793008D6DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8839D1B9D0793008D6DE1 /* ViewController.swift */; };
 		AFE883A11B9D0793008D6DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE8839F1B9D0793008D6DE1 /* Main.storyboard */; };
 		AFE883A31B9D0793008D6DE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE883A21B9D0793008D6DE1 /* Images.xcassets */; };
 		AFE883A61B9D0793008D6DE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE883A41B9D0793008D6DE1 /* LaunchScreen.xib */; };
 		AFE883B21B9D0793008D6DE1 /* outletboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE883B11B9D0793008D6DE1 /* outletboxTests.swift */; };
+		AFE883BC1B9D0E4B008D6DE1 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE883BB1B9D0E4B008D6DE1 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF9BE5601D9B8064009DC7CD /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		AFE883961B9D0793008D6DE1 /* outletbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = outletbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE8839A1B9D0793008D6DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE8839B1B9D0793008D6DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		AFE883AB1B9D0793008D6DE1 /* outletboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = outletboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE883B01B9D0793008D6DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE883B11B9D0793008D6DE1 /* outletboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outletboxTests.swift; sourceTree = "<group>"; };
+		AFE883BB1B9D0E4B008D6DE1 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 				AFE8839B1B9D0793008D6DE1 /* AppDelegate.swift */,
 				AFE8839D1B9D0793008D6DE1 /* ViewController.swift */,
 				AFE8839F1B9D0793008D6DE1 /* Main.storyboard */,
+				AFE883BB1B9D0E4B008D6DE1 /* ContentViewController.swift */,
 				AFE883A21B9D0793008D6DE1 /* Images.xcassets */,
 				AFE883A41B9D0793008D6DE1 /* LaunchScreen.xib */,
 				AFE883991B9D0793008D6DE1 /* Supporting Files */,
+				AF9BE5601D9B8064009DC7CD /* Slider.swift */,
 			);
 			path = outletbox;
 			sourceTree = "<group>";
@@ -156,14 +162,18 @@
 		AFE8838E1B9D0793008D6DE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Angelito;
 				TargetAttributes = {
 					AFE883951B9D0793008D6DE1 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					AFE883AA1B9D0793008D6DE1 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = AFE883951B9D0793008D6DE1;
 					};
 				};
@@ -213,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE8839E1B9D0793008D6DE1 /* ViewController.swift in Sources */,
+				AFE883BC1B9D0E4B008D6DE1 /* ContentViewController.swift in Sources */,
+				AF9BE5611D9B8064009DC7CD /* Slider.swift in Sources */,
 				AFE8839C1B9D0793008D6DE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +280,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -291,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -312,8 +327,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -329,9 +346,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -342,7 +360,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = outletbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "angelsystem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -352,7 +372,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = outletbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "angelsystem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -360,17 +382,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = outletboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "angelsystem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/outletbox.app/outletbox";
 			};
 			name = Debug;
@@ -379,13 +400,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = outletboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "angelsystem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/outletbox.app/outletbox";
 			};
 			name = Release;
@@ -409,6 +429,7 @@
 				AFE883B71B9D0793008D6DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFE883B81B9D0793008D6DE1 /* Build configuration list for PBXNativeTarget "outletboxTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +438,7 @@
 				AFE883BA1B9D0793008D6DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
